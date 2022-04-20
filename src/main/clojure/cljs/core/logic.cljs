@@ -227,7 +227,7 @@
     meta)
   IWithMeta
   (-with-meta [this new-meta]
-    (LVar. name meta))
+    (LVar. name new-meta))
   IPrintWithWriter
   (-pr-writer [_ writer opts]
     (-write writer (str "<lvar:" name ">")))
